@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav--header">
+        <ul class="nav--links">
+          <li>
+            <a href="#" class="nav--logo">
+              <img
+                src="images/logo.svg"
+                alt="the logo of huddle"
+                class="nav--logo--icon"
+              />
+            </a>
+          </li>
+
+          <li><a href="#" class="btn--link">Try it free</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section--hero">
+        <div class="container--small section--hero--wrapper">
+          <h1 class="heading--primary h-bottom">
+            Build The Community Your Fans Will Love
+          </h1>
+          <div class="section--hero--content">
+            <p class="section--hero--paragraph">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <a href="" class="btn--link--cta">Get Started For Free</a>
+          </div>
+          <img src="images/screen-mockups.svg" alt="" />
+          <div class="section--hero--stats">
+            <div class="section--hero--stat section--hero--stats--1">
+              <img src="images/icon-communities.svg" alt="Communities icon" />
+              <small class="section--hero--stats--num">1.4k+</small>
+              <p class="section--hero--stats--txt">Communities Formed</p>
+            </div>
+            <div class="section--hero--stat section--hero--stats--2">
+              <img src="images/icon-messages.svg" alt="" />
+              <small class="section--hero--stats--num">2.7m+</small>
+              <p class="section--hero--stats--txt">Messages Sent</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--how">
+        <div class="section--how--wrapper">
+          <div class="bg-icon bg-icon-top1"></div>
+          <div
+            class="section--how--content section--how--content--1 grid grid--2--cols grid--how container--large"
+          >
+            <div class="section--how--text">
+              <h2 class="heading--secondary">Grow Together</h2>
+              <p class="section--how--paragraph">
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+            <img src="images/illustration-grow-together.svg" alt="" />
+          </div>
+          <div class="bg-icon bg-icon-bottom1"></div>
+          <div
+            class="section--how--content section--how--content--2 grid grid--2--cols grid--how container--large"
+          >
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+            <div class="section--how--text">
+              <h2 class="heading--secondary">Flowing Conversations</h2>
+              <p class="section--how--paragraph">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+          </div>
+          <div class="bg-icon bg-icon-top1"></div>
+          <div
+            class="section--how--content section--how--content--3 grid grid--2--cols grid--how container--large"
+          >
+            <div class="section--how--text">
+              <h2 class="heading--secondary">Your Users</h2>
+              <p class="section--how--paragraph">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+            <img src="images/illustration-your-users.svg" alt="" />
+          </div>
+          <div class="bg-icon bg-icon-bottom2"></div>
+        </div>
+      </section>
+      <section class="section--cta">
+        <div class="container--large section--cta--wrapper">
+          <h3 class="heading--tertiary">Ready To Build Your Community?</h3>
+          <a href="" class="btn--link--cta">Get Started For Free</a>
+        </div>
+      </section>
+    </main>
+    <div class="bg-icon bg-icon-footer"></div>
+    <footer class="footer">
+      <div class="container--large grid grid--2--cols grid--footer">
+        <div class="adress">
+          <div class="adress--text">
+            <a href="#" class="nav--logo">
+              <img
+                src="images/logo-footer.svg"
+                alt="the logo of huddle"
+                class="nav--logo--icon"
+              />
+            </a>
+            <p class="footer--paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            </p>
+          </div>
+
+          <div class="adress--personal">
+            <div class="adress--personal--content">
+              <img src="images/icon-phone.svg" alt="A phone icon" />
+              <a href="tel:+1-543-123-4567" class="footer--link"
+                >Phone: +1-543-123-4567</a
+              >
+            </div>
+            <div class="adress--personal--content">
+              <img src="images/icon-email.svg" alt="An email icon" />
+              <a href="mailto:example@huddle.com" class="footer--link"
+                >example@huddle.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contact grid grid--2--cols grid--contact">
+          <div class="contact--text">
+            <small class="heading--contact">Newsletter</small>
+            <p class="footer--paragraph">
+              To receive tips on how to grow your community, sign up to our
+              weekly Newsletter your email address
+            </p>
+          </div>
+
+          <form>
+            <label for="email"></label>
+            <input type="email" id="email" />
+          
+            <button type="submit" class="btn--link--contact">Subscribe</button>
+          </form>
+        </div>
+
+        <ul class="social--links">
+          <li>
+            <a href="#" class="footer--link"
+              ><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" class="footer--link"><ion-icon name="logo-instagram"></ion-icon></i></a>
+          </li>
+          <li>
+            <a href="#" class="footer--link"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+      
+    </footer>
+
+    <!-- 
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>

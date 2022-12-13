@@ -1,0 +1,161 @@
+@media (max-width: 56.25em) {
+  /*900px*/
+  html {
+    font-size: 56.25%;
+  }
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+  .section--how {
+    text-align: center;
+  }
+  .grid--how {
+    justify-items: center;
+    row-gap: 8rem;
+  }
+
+  .section--how--text:first-child {
+    grid-row: 2;
+  }
+  .section--how--content img {
+    width: 80%;
+  }
+  .section--how--content--1 {
+    padding-top: 9.6rem;
+  }
+  .section--how--content--3 {
+    padding-bottom: 9.6rem;
+  }
+  
+  .adress {
+    grid-row: 2;
+    padding-top: 9.6rem;
+    gap: 4.8rem;
+  }
+  .contact {
+    row-gap: 4.8rem;
+  }
+  .adress .footer--paragraph {
+    padding-top: 3.2rem;
+  }
+
+  form {
+    width: 50%;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .btn--link--contact {
+    width: fit-content;
+    padding: 1.6rem 3.2rem;
+    margin: 0;
+  }
+  #email {
+    width: 30rem;
+    font-size: 1.6rem;
+    padding: 1.6rem 0.8rem;
+  }
+}
+@media (max-width: 42.5em) {
+  /*680px*/
+  .section--hero--stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 9.6rem;
+    margin-top: 12.8rem;
+  }
+  .section--hero--stats--num {
+    font-size: 6.2rem;
+  }
+  .section--hero {
+    padding: 6.4rem 0 4.8rem 0;
+  }
+  .section--how {
+    padding: 6.4rem 0 0 0;
+  }
+
+  .container--small,
+  .container--large {
+    padding: 0 4.8rem;
+  }
+  .section--how--content {
+    padding: 4.8rem 4.8rem;
+  }
+  .nav--header {
+    padding: 3.2rem 2.4rem;
+  }
+  .btn--link--cta:link,
+  .btn--link--cta:visited,
+  .section--hero--paragraph,
+  .section--how--paragraph,
+  .footer--paragraph,
+  .btn--link--contact,
+  .section--hero--stats--txt {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 29.25em) {
+  /*468pxc*/
+  html {
+    font-size: 53%;
+  }
+  form {
+    width: 100%;
+  }
+  .nav--logo--icon {
+    max-width: 15rem;
+  }
+  .btn--link--contact {
+    align-self: flex-end;
+  }
+  #email {
+    width: 100%;
+  }
+  .h-bottom {
+    margin-bottom: 3.2rem;
+  }
+  .section--hero--paragraph {
+    margin-bottom: 6.4rem;
+  }
+  .section--hero--content {
+    margin-bottom: 12.8rem;
+  }
+  .section--hero--stats--num {
+    font-size: 7.4rem;
+  }
+  .section--hero--stats {
+    gap: 10rem;
+  }
+  .section--hero--stat img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .bg-icon {
+    aspect-ratio: 375/101;
+    width: 100%;
+  }
+  .bg-icon-top1 {
+    background-image: url(../images/bg-section-top-mobile-1.svg);
+    aspect-ratio: 375/112;
+  }
+  .bg-icon-bottom1 {
+    background-image: url(../images/bg-section-bottom-mobile-1.svg);
+    aspect-ratio: 375/53;
+  }
+  .bg-icon-top2 {
+    background-image: url(../images/bg-section-top-mobile-2.svg);
+    aspect-ratio: 375/103;
+  }
+  .bg-icon-bottom2 {
+    background-image: url(../images/bg-section-bottom-mobile-2.svg);
+    aspect-ratio: 375/101;
+  }
+  .bg-icon-footer {
+    background-image: url(../images/bg-footer-top-mobile.svg);
+    /* translate: 0 2%; */
+    aspect-ratio: 375/53;
+  }
+  .section--cta {
+    padding: 15rem 0 24rem 0;
+  }
+}
