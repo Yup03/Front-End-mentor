@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://yup03.github.io/Front-End-mentor/advice-generator-app-main/)
+- [live](https://yup03.github.io/Front-End-mentor/advice-generator-app-main/)
 
 ## My process
 
