@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <img
+            src="./assets/images/logo.svg"
+            alt="logo"
+            class="nav_logo"
+            class="logo"
+          />
+          <ul class="nav_links">
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">New</a></li>
+            <li><a href="#" class="nav_link">Popular</a></li>
+            <li><a href="#" class="nav_link">Trending</a></li>
+            <li><a href="#" class="nav_link">Categories</a></li>
+          </ul>
+
+          <button class="btn_nav">
+            <img
+              src="./assets/images/icon-menu.svg"
+              alt="nav icon"
+              class="icon-nav--open"
+            />
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt="nav icon"
+              class="icon-nav--close"
+            />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container grid grid-6-cols">
+        <img
+          src="./assets/images/image-web-3-desktop.jpg"
+          alt="web 3 picture"
+          class="big-img"
+        />
+        <h1 class="heading-primary">The Bright Future of Web 3.0?</h1>
+        <div class="paragraph-box">
+          <p class="paragraph">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="btn">Read more </a>
+        </div>
+        <aside class="aside">
+          <small class="aside_heading">New</small>
+          <div class="aside_feature-box">
+            <div class="aside_feature">
+              <h2 class="heading-secondary u-m-small">
+                Hydrogen VS Electric Cars
+              </h2>
+              <p class="paragraph">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="aside_feature">
+              <h2 class="heading-secondary u-m-small">
+                The Downsides of AI Artistry
+              </h2>
+              <p class="paragraph">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div class="aside_feature">
+              <h2 class="heading-secondary u-m-small">
+                Is VC Funding Drying Up?
+              </h2>
+              <p class="paragraph">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </aside>
+        <div class="feature feature-1">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="Retro pc"
+            class="feature_img"
+          />
+          <div class="feature_text">
+            <small class="number">01</small>
+            <a href="#" class="heading-tertiary">Reviving Retro PCs</a>
+            <p class="paragraph">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="feature feature-2">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="Laptop keyboard"
+            class="feature_img"
+          />
+          <div class="feature_text">
+            <small class="number">02</small>
+            <a href="#" class="heading-tertiary">Top 10 Laptops of 2022</a>
+            <p class="paragraph">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="feature feature-3">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="gaming image"
+            class="feature_img"
+          />
+          <div class="feature_text">
+            <small class="number">03</small>
+            <a href="#" class="heading-tertiary">The Growth of Gaming</a>
+            <p class="paragraph">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

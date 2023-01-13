@@ -1,0 +1,27 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    color: $off-white;
+    background-color: $soft-red;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 1rem 2.4rem;
+    transition: $transition-default;
+    margin: 3.2rem 0 0 0;
+    display: inline-block;
+  }
+  &:hover,
+  &:active {
+    background-color: $very-dark-blue;
+  }
+  &_nav {
+    display: none;
+  }
+}
+.icon-nav--close {
+  display: none;
+  position: absolute;
+}

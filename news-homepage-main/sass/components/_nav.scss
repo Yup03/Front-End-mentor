@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  align-items: center;
+  
+  &_links {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    gap: 3.2rem;
+  }
+}

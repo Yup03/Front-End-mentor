@@ -1,0 +1,13 @@
+.feature {
+  display: flex;
+  gap: 2.4rem;
+  padding-top: 2.4rem;
+  &_img {
+    max-width: 10rem;
+  }
+  &_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

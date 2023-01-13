@@ -1,0 +1,66 @@
+body {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+.nav_link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $dark-grayish-blue;
+    transition: $transition-default;
+  }
+  &:hover,
+  &:active {
+    color: $soft-red;
+  }
+}
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: $very-dark-blue;
+}
+.paragraph {
+  color: $dark-grayish-blue;
+  line-height: 1.5;
+}
+.aside .paragraph {
+  color: $grayish-blue;
+  font-size: 1.4rem;
+}
+.heading-secondary {
+  color: $off-white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: $transition-default;
+  &:hover,
+  &:active {
+    color: $soft-orange;
+  }
+}
+.aside_heading {
+  color: $soft-orange;
+  font-weight: 700;
+  font-size: 3.2rem;
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+.number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: $grayish-blue;
+}
+.heading-tertiary {
+  &:link,
+  &:visited {
+    color: $very-dark-blue;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: $transition-default;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  &:hover,
+  &:active {
+    color: $soft-red;
+  }
+}
