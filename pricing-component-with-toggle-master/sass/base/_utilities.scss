@@ -1,0 +1,26 @@
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  // background-color: aqua;
+  padding-top: 10rem;
+}
+.bg-top {
+  position: fixed;
+  right: 0;
+  z-index: -5;
+  // aspect-ratio: 375/658;
+}
+.bg-bottom {
+  // background-image: url(../../images/bg-bottom.svg);
+  // background-position: bottom left;
+  // aspect-ratio: 353/304;
+  // background-position: bottom left;
+
+  position: fixed;
+  z-index: -5;
+  left: 0;
+  bottom: 0;
+
+  // width: 100vw;
+  // height: 100vh;
+}

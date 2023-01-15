@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <div class="bg-top">
+      <img src="./images/bg-top.svg" alt="backgound img" />
+    </div>
+    <main>
+      <section class="pricing">
+        
+        <div class="container">
+          <h2 class="heading-secondary">Our Pricing</h2>
+
+          <div class="toggle-box">
+            <button class="btn btn--annually">Annually</button>
+            <div class="checkbox-box">
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox"></label>
+            </div>
+            <button class="btn btn--monthly">Monthly</button>
+          </div>
+
+          <div class="pricing-card_box">
+            <div class="pricing-card">
+              <h3 class="heading-tertiary">Basic</h3>
+              <!-- &dollar;19.99  -->
+              <small class="pricing-card_amount" data-pricing="basic"
+                ><span>&dollar;</span
+                ><small class="amount">199.99</small></small
+              >
+              <small class="pricing-card_storage">500 GB Storage</small>
+              <p class="pricing-card_users">2 Users Allowed</p>
+              <p class="pricing-card_gb">Send up to 3 GB</p>
+              <a href="#" class="btn-cta">Learn More</a>
+            </div>
+            <div class="pricing-card">
+              <h3 class="heading-tertiary">Professional</h3>
+              <!-- &dollar;24.99  -->
+              <small class="pricing-card_amount" data-pricing="professional"
+                ><span>&dollar;</span
+                ><small class="amount">249.99</small></small
+              >
+              <small class="pricing-card_storage">1 TB Storage</small>
+              <p class="pricing-card_users">5 Users Allowed</p>
+              <p class="pricing-card_gb">Send up to 10 GB</p>
+              <a href="#" class="btn-cta">Learn More</a>
+            </div>
+            <div class="pricing-card">
+              <h3 class="heading-tertiary">Master</h3>
+              <!-- &dollar;39.99  -->
+              <small class="pricing-card_amount" data-pricing="master"
+                ><span>&dollar;</span
+                ><small class="amount">399.99</small></small
+              >
+              <small class="pricing-card_storage">2 TB Storage</small>
+              <p class="pricing-card_users">10 Users Allowed</p>
+              <p class="pricing-card_gb">Send up to 20 GB</p>
+              <a href="#" class="btn-cta">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <div class="bg-bottom">
+      <img src="./images/bg-bottom.svg" alt="backgound img" />
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

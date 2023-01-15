@@ -1,0 +1,59 @@
+.pricing {
+  position: relative;
+  // height: 100vh;
+  padding: 0 9.6rem;
+  &-card_box {
+    display: flex;
+    place-content: center;
+    // gap: 1.3rem;
+  }
+}
+.toggle-box {
+  margin-bottom: 12rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width<=61em) {
+  .pricing-card_amount {
+    font-size: 4.8rem;
+    span {
+      font-size: 2rem;
+    }
+  }
+}
+@media (width<=52em) {
+  .pricing-card_box {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .pricing-card_amount {
+    font-size: 6rem;
+    span {
+      font-size: 3.2rem;
+    }
+  }
+  .pricing-card {
+    width: 25rem;
+    &:nth-of-type(even) {
+      &::after {
+        display: none;
+      }
+    }
+    &:not(:nth-of-type(even)) {
+      border-radius: 1rem;
+    }
+  }
+  .toggle-box {
+    margin-bottom: 6.4rem;
+  }
+  .bg-top {
+    right: -20rem;
+  }
+  .bg-bottom {
+    display: none;
+  }
+}
