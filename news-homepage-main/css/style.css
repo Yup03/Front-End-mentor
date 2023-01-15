@@ -108,7 +108,6 @@ body {
 
 .icon-nav--close {
   display: none;
-  position: absolute;
 }
 
 .feature {
@@ -152,6 +151,8 @@ body {
 
 .big-img {
   grid-column: span 4;
+}
+.big-img img {
   width: 100%;
   display: block;
 }
@@ -298,9 +299,9 @@ body {
   }
   .nav.active .icon-nav--close {
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    position: fixed;
+    right: 2.6rem;
+    top: 8.4rem;
   }
   .nav_link:link, .nav_link:visited {
     color: hsl(240deg, 100%, 5%);

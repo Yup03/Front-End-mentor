@@ -36,6 +36,7 @@
             class="nav_logo"
             class="logo"
           />
+
           <ul class="nav_links">
             <li><a href="#" class="nav_link">Home</a></li>
             <li><a href="#" class="nav_link">New</a></li>
@@ -62,11 +63,17 @@
 
     <main>
       <div class="container grid grid-6-cols">
-        <img
-          src="./assets/images/image-web-3-desktop.jpg"
-          alt="web 3 picture"
-          class="big-img"
-        />
+        <picture class="big-img">
+          <source
+            media="(width<=45em)"
+            srcset="./assets/images/image-web-3-mobile.jpg"
+          />
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="web 3 picture"
+          />
+        </picture>
+
         <h1 class="heading-primary">The Bright Future of Web 3.0?</h1>
         <div class="paragraph-box">
           <p class="paragraph">

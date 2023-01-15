@@ -1,7 +1,9 @@
 .big-img {
   @include span(4);
-  width: 100%;
-  display: block;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 .heading-primary,
 .paragraph-box {
@@ -147,9 +149,9 @@
   }
   .nav.active .icon-nav--close {
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    position: fixed;
+    right: 2.6rem;
+    top: 8.4rem;
   }
 
   .nav_link {
