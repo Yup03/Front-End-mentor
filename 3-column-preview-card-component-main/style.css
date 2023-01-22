@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --white: hsl(0, 0%, 95%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2.4rem;
+}
+.card-box {
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: flex-start;
+  min-height: 50rem;
+  padding: 4.8rem;
+}
+.card:first-child {
+  background-color: var(--bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+.card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+.card:last-child {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--white);
+  font-weight: 700;
+}
+.paragraph {
+  color: var(--paragraph-color);
+  line-height: 1.6;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: var(--white);
+  margin-top: auto;
+  display: block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn--yellow:link,
+.btn--yellow:visited {
+  color: var(--bright-orange);
+}
+.btn--light:link,
+.btn--light:visited {
+  color: var(--dark-cyan);
+}
+.btn--dark:link,
+.btn--dark:visited {
+  color: var(--very-dark-cyan);
+}
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #fff;
+  color: var(--white);
+}
+
+@media (width<=53.75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .card {
+    padding: 4.8rem 2rem;
+  }
+}
+@media (width<=43.56em) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    padding-top: 8rem;
+  }
+  .card-box {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 30rem;
+    min-height: 40rem;
+    padding: 4.8rem;
+  }
+  .card:last-child {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .card:first-child {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
