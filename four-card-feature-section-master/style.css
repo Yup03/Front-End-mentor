@@ -1,0 +1,181 @@
+:root {
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.8rem;
+  padding-bottom: 6.4rem;
+}
+.header div {
+  text-align: center;
+  max-width: 50rem;
+}
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
+.sub-heading {
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 1.4rem;
+  display: inline-block;
+}
+.header-paragraph {
+  color: var(--grayish-blue);
+  line-height: 1.4;
+}
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+.card {
+  background-color: var(--very-light-gray);
+  padding: 3.2rem 1.8rem 2.4rem 1.8rem;
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1), 0 10px 2rem rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 5px;
+  position: relative;
+}
+.card::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px 0 0 / 5px 5px 0 0;
+}
+
+.card:first-child {
+  grid-row: 2/4;
+}
+.card:first-child::before {
+  background-color: hsl(180, 62%, 55%);
+}
+.card:nth-child(2) {
+  grid-column: 2;
+  grid-row: span 2;
+}
+.card:nth-child(2)::before {
+  background-color: hsl(0, 78%, 62%);
+}
+.card:nth-child(3) {
+  grid-column: 2;
+  grid-row: 3/-1;
+}
+.card:nth-child(3)::before {
+  background-color: hsl(34, 97%, 64%);
+}
+.card:last-child {
+  grid-row: 2/4;
+  grid-column: 3;
+}
+.card:last-child::before {
+  background-color: hsl(212, 86%, 64%);
+}
+.heading-quaternary {
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.paragraph {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+}
+.card-img {
+  align-self: end;
+}
+@media (width<=60em) {
+  body {
+    font-size: 1.4rem;
+  }
+  .card-box {
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+  }
+}
+@media (width<=47.3em) {
+  body {
+    font-size: 1.5rem;
+  }
+  .header {
+    padding-top: 9.6rem;
+  }
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .card-box {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+  .card:first-child {
+    grid-row: 1;
+  }
+  .card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .card:last-child {
+    grid-row: 4;
+    grid-column: 1;
+  }
+}
+@media (width<=32.8em) {
+  html {
+    font-size: 56.25%;
+  }
+  body {
+    font-size: 1.7rem;
+  }
+
+  .container {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+}
+@media (width<=26.2em) {
+  html {
+    font-size: 50%;
+  }
+}
