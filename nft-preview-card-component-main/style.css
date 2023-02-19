@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-alpha: hsla(178, 100%, 50%, 0.408);
+  --line: hsl(215, 32%, 27%);
+  --radius-img: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 4.8rem;
+  display: flex;
+  background-color: var(--main-BG);
+  font-family: "Outfit", sans-serif;
+}
+.card {
+  max-width: 30rem;
+  margin: auto;
+  background-color: var(--card-BG);
+  border-radius: 1.4rem;
+  padding: 2.4rem;
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 1.6rem;
+  box-shadow: 0 2rem 0 1.4rem hsl(217, 55%, 10%),
+    0 2rem 0 4.8rem hsla(217, 57%, 10%, 0.3);
+}
+.card_heading {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.card_heading,
+.avatar_name {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.card_heading:hover,
+.card_heading:active,
+.avatar_name:hover,
+.avatar_name:active {
+  color: var(--cyan);
+}
+.card
+  *:not(
+    :last-child,
+    .card_eth,
+    .card_days,
+    .avatar_img,
+    .card_days-icon,
+    .card_eth-icon
+  ) {
+  margin-bottom: 1.6rem;
+}
+.card_img-box {
+  border-radius: var(--radius-img);
+  position: relative;
+  cursor: pointer;
+}
+.card_img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan-alpha) url(./images/icon-view.svg) no-repeat center; /*color img repeat attachment position*/
+  border-radius: var(--radius-img);
+
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.card_img-box:hover::after {
+  opacity: 1;
+}
+
+.card_img {
+  width: 100%;
+  border-radius: var(--radius-img);
+  display: block;
+}
+.card_description {
+  line-height: 1.4;
+}
+.avatar-box {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.avatar_img {
+  border-radius: 50%;
+  width: 3.5rem;
+  box-shadow: 0 0 0 2px var(--white);
+}
+.avatar_pre {
+  font-weight: 400;
+}
+.avatar_name {
+  color: var(--white);
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2rem;
+  gap: 5rem;
+}
+.card_eth {
+  color: var(--cyan);
+  font-weight: 700;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card_eth-text,
+.card_days-text {
+  flex-shrink: 0;
+}
+.card_days {
+  font-weight: 400;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card_eth,
+.card_days {
+  flex: 1;
+}
+.card_days-text {
+  display: inline-block;
+}
+@media (width<375px) {
+  html {
+    font-size: 50%;
+  }
+}
