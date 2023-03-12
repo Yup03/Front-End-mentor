@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav">
+        <div class="nav__text">
+          <h1>Social Media Dashboard</h1>
+          <span class="total">Total Followers: 23,004</span>
+        </div>
+        <div class="theme-box">
+          <span>Dark Mode</span>
+          <button class="btn-theme">
+            <input type="checkbox" id="check" />
+            <label for="check"></label>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-followers">
+        <div class="container grid grid--4-cols">
+          <div class="follower-box facebook-box">
+            <div class="username-box">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="social meadia icon"
+                class="icon"
+              />
+              <small class="username">@nathanf </small>
+            </div>
+            <div class="followers-amount">
+              <span>1987</span>
+              <span>Followers</span>
+            </div>
+            <div class="followers-today">
+              <img src="./images/icon-up.svg" alt="icon" />
+              <small>12 Today</small>
+            </div>
+          </div>
+
+          <div class="follower-box twitter-box">
+            <div class="username-box">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="social meadia icon"
+                class="icon"
+              />
+              <small class="username">@nathanf</small>
+            </div>
+            <div class="followers-amount">
+              <span>1044</span> <span>Followers</span>
+            </div>
+            <div class="followers-today">
+              <img src="./images/icon-up.svg" alt="icon" />
+              <small>99 Today</small>
+            </div>
+          </div>
+
+          <div class="follower-box instagram-box">
+            <div class="username-box">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="social meadia icon"
+                class="icon"
+              />
+              <small class="username">@realnathanf</small>
+            </div>
+            <div class="followers-amount">
+              <span>11k</span> <span>Followers</span>
+            </div>
+            <div class="followers-today">
+              <img src="./images/icon-up.svg" alt="icon" />
+              <small>1099 Today</small>
+            </div>
+          </div>
+
+          <div class="follower-box youtube-box">
+            <div class="username-box">
+              <img
+                src="./images/icon-youtube.svg"
+                alt="social meadia icon"
+                class="icon"
+              />
+              <small class="username">Nathan F.</small>
+            </div>
+            <div class="followers-amount">
+              <span>8239</span> <span>Subscribers</span>
+            </div>
+            <div class="followers-today">
+              <img src="./images/icon-down.svg" alt="icon" />
+              <small class="red">144 Today</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-overview">
+        <div class="container">
+          <h2>Overview - Today</h2>
+          <div class="grid grid--4-cols">
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Page Views</span>
+                <img src="./images/icon-facebook.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>87</span>
+                <span><img src="./images/icon-up.svg" />3%</span>
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Likes</span>
+                <img src="./images/icon-facebook.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>52</span>
+                <span
+                  ><img src="./images/icon-down.svg" /><small class="red"
+                    >2%</small
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Likes</span>
+                <img src="./images/icon-instagram.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>5462</span>
+                <span
+                  ><img src="./images/icon-up.svg" /><small>2257%</small></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Profile Views</span>
+                <img src="./images/icon-instagram.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>52k</span>
+                <span
+                  ><img src="./images/icon-up.svg" /><small>1375%</small></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Retweets</span>
+                <img src="./images/icon-twitter.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>117</span>
+                <span
+                  ><img src="./images/icon-up.svg" /><small>303%</small></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Likes</span>
+                <img src="./images/icon-twitter.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>507</span>
+                <span
+                  ><img src="./images/icon-up.svg" /><small>553%</small></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Likes</span>
+                <img src="./images/icon-youtube.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>107</span>
+                <span
+                  ><img src="./images/icon-down.svg" /><small class="red"
+                    >19%</small
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="overview-box">
+              <div class="overview-head">
+                <span>Total Views</span>
+                <img src="./images/icon-youtube.svg" alt="icon" />
+              </div>
+              <div class="overview-foot">
+                <span>1407</span>
+                <span
+                  ><img src="./images/icon-down.svg" /><small class="red"
+                    >12%</small
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
