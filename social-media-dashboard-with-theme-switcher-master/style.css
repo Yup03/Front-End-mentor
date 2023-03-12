@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: color 1s, background 1s;
+  /* transition: color 1s, background 1s; */
 }
 html {
   font-size: 62.5%;
