@@ -2,7 +2,19 @@
 
 const btnTheme = document.querySelector("#check"),
   root = document.documentElement,
-  circle = document.querySelector(".btn-theme label");
+  circle = document.querySelector(".btn-theme label"),
+  counters = document.querySelectorAll("span[data-target]");
+console.log(counters);
+
+counters.forEach((counter) => {
+  gsap.to(counter, {
+    innerText: counter.dataset.target,
+    duration: 2,
+    snap: {
+      innerText: 1,
+    },
+  });
+});
 
 circle.style.left = "1px";
 
