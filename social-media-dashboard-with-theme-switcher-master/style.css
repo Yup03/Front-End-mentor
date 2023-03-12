@@ -29,7 +29,7 @@ html {
 }
 body {
   font-size: 1.4rem;
-  background-color: var(--BG);
+  background: var(--BG);
   font-family: "Inter", sans-serif;
   color: var(--Text);
   font-weight: 700;
@@ -50,7 +50,7 @@ body {
 }
 /*//////////////////////////////////////*/
 .header {
-  background-color: var(--Top-BG);
+  background: var(--Top-BG);
   padding-top: 4.8rem;
   padding-bottom: 15.8rem;
   color: var(--Text-alt);
@@ -91,7 +91,7 @@ h2 {
 .btn-theme label {
   width: 1.8rem;
   height: 1.8rem;
-  background-color: var(--BG);
+  background: var(--BG);
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
@@ -111,10 +111,10 @@ input[type="checkbox"] {
 /*//////////////////////////////////////*/
 .section-followers {
   transform: translateY(-50%);
-  background-color: transparent;
+  background: transparent;
 }
 .follower-box {
-  background-color: var(--Card-BG);
+  background: var(--Card-BG);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,16 +137,16 @@ input[type="checkbox"] {
   filter: opacity(0.8);
 }
 .facebook-box.follower-box::before {
-  background-color: hsl(208, 92%, 53%);
+  background: hsl(208, 92%, 53%);
 }
 .twitter-box.follower-box::before {
-  background-color: hsl(203, 89%, 53%);
+  background: hsl(203, 89%, 53%);
 }
 .instagram-box.follower-box::before {
   background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
 .youtube-box.follower-box::before {
-  background-color: hsl(348, 97%, 39%);
+  background: hsl(348, 97%, 39%);
 }
 .username-box,
 .followers-today {
@@ -181,7 +181,7 @@ input[type="checkbox"] {
   transform: translateY(-20%);
 }
 .overview-box {
-  background-color: var(--Card-BG);
+  background: var(--Card-BG);
   padding: 2.4rem;
   border-radius: 5px;
   cursor: pointer;
@@ -207,7 +207,7 @@ input[type="checkbox"] {
   align-items: center;
   color: hsl(163, 72%, 41%);
 }
-.red {
+.red-text {
   color: hsl(356, 69%, 56%);
 }
 /*//////////////////////////////////////*/
@@ -246,7 +246,7 @@ input[type="checkbox"] {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: var(--Card-BG);
+    background: var(--Card-BG);
     position: absolute;
     display: block;
     top: -2.4rem;
