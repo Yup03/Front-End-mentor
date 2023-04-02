@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box u-r">
+        <div class="average-box u-p u-r">
+          <h2 class="heading-average">Your Result</h2>
+          <span class="average">
+            <span class="average-number">76</span>
+            <span class="hundred-average">of 100</span>
+          </span>
+          <span class="great">Great</span>
+          <p class="paragraph">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="summary-box u-p">
+          <h2 class="heading-summary">Summary</h2>
+          <div
+            class="result"
+            style="
+              color: hsl(0, 100%, 67%);
+              background-color: hsla(0, 100%, 67%, 0.1);
+            "
+          >
+            <img
+              src="./assets/images/icon-reaction.svg"
+              alt="icon"
+              class="result__icon"
+            />
+            <span class="result__label">Reaction</span>
+            <span class="result__number">
+              <span class="result__number-gotten">80</span>
+              <span class="hundred">/ 100</span>
+            </span>
+          </div>
+          <div
+            class="result"
+            style="
+              color: hsl(39, 100%, 56%);
+              background-color: hsla(39, 100%, 56%, 0.1);
+            "
+          >
+            <img
+              src="./assets/images/icon-memory.svg"
+              alt="icon"
+              class="result__icon"
+            />
+            <span class="result__label">Memory</span>
+            <span class="result__number"
+              ><span class="result__number-gotten">92</span>
+              <span class="hundred">/ 100</span></span
+            >
+          </div>
+          <div
+            class="result"
+            style="
+              color: hsl(166, 100%, 37%);
+              background-color: hsla(166, 100%, 37%, 0.1);
+            "
+          >
+            <img
+              src="./assets/images/icon-verbal.svg"
+              alt="icon"
+              class="result__icon"
+            />
+            <span class="result__label">Verbal</span>
+            <span class="result__number"
+              ><span class="result__number-gotten">61</span>
+              <span class="hundred">/ 100</span></span
+            >
+          </div>
+          <div
+            class="result"
+            style="
+              color: hsl(234, 85%, 45%);
+              background-color: hsla(234, 85%, 45%, 0.1);
+            "
+          >
+            <img
+              src="./assets/images/icon-visual.svg"
+              alt="icon"
+              class="result__icon"
+            />
+            <span class="result__label">Visual</span>
+            <span class="result__number"
+              ><span class="result__number-gotten">72</span>
+              <span class="hundred">/ 100</span></span
+            >
+          </div>
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
