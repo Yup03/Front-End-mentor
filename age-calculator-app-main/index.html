@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <form>
+        <div class="form-field">
+          <label>
+            <span class="label">Day</span>
+            <input
+              type="text"
+              placeholder="DD"
+              class="day"
+              pattern="(0?[1-9]|[12]\d|3[01])"
+              maxlength="2"
+            />
+            <div class="warn warn-day">Must be a valid day</div>
+          </label>
+          <label>
+            <span class="label">Month</span>
+            <input
+              type="text"
+              placeholder="MM"
+              class="month"
+              pattern="^(?:[1-9]|0[1-9]|1[0-2])"
+              maxlength="2"
+            />
+            <div class="warn">Must be a valid month</div>
+          </label>
+          <label>
+            <span class="label">Year</span>
+            <input
+              type="text"
+              placeholder="YYYY"
+              class="year"
+              pattern="^(?:19|20)\d{2}$"
+              maxlength="4"
+            />
+            <div class="warn warn-year">Must be a valid year</div>
+          </label>
+        </div>
+        <div class="submit-box">
+          <button type="submit" class="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </form>
+      <div class="output-box">
+        <div class="out-year">
+          <span class="out-value out-year__value"></span>
+          <span class="out-text"> years</span>
+        </div>
+        <div class="out-month">
+          <span class="out-value out-month__value"></span>
+          <span class="out-text"> months</span>
+        </div>
+        <div class="out-day">
+          <span class="out-value out-day__value"></span>
+          <span class="out-text">days</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

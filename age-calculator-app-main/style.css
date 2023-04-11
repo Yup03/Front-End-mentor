@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 86%);
+  min-height: 100vh;
+  color: hsl(0, 1%, 44%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.4rem;
+}
+
+input:focus {
+  outline: 0;
+}
+input:invalid {
+  border-color: rgb(255, 87, 87);
+}
+
+input {
+  padding: 1rem;
+  display: block;
+  font-size: 3.2rem;
+  font-weight: inherit;
+  width: 13rem;
+
+  border: 1px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%);
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+.warn {
+  color: rgb(255, 87, 87);
+  opacity: 0;
+}
+input:invalid ~ .warn {
+  opacity: 1;
+}
+.container {
+  max-width: 75rem;
+  padding: 4.8rem;
+  background-color: hsl(0, 0%, 94%);
+  border-radius: 2.4rem 2.4rem 18rem 2.4rem;
+
+  flex-grow: 1;
+}
+
+.form-field {
+  display: flex;
+  gap: 4.8rem;
+}
+.label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.out-text,
+.out-value {
+  font-size: 8rem;
+  font-weight: 800;
+  font-style: italic;
+  display: inline-block;
+}
+.out-text {
+  color: hsl(0, 0%, 8%);
+}
+.out-value {
+  color: hsl(259, 100%, 65%);
+  margin-right: 1rem;
+  min-width: 10rem;
+  text-align: end;
+}
+.submit {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+}
+.submit-box {
+  position: relative;
+  display: flex;
+}
+.submit-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(0, 0%, 86%);
+}
+
+@media (width<662px) {
+  html {
+    font-size: 50%;
+  }
+  .submit-box {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+  .submit {
+    margin: 0 auto;
+  }
+  .out-text {
+    font-size: 6.4rem;
+  }
+  input {
+    font-size: 2.4rem;
+  }
+  .form-field {
+    gap: 2.4rem;
+  }
+  input {
+    width: 100%;
+  }
+  label {
+    flex: 1;
+  }
+}
+@media (width<472px) {
+  .out-text {
+    font-size: 4.8rem;
+  }
+}
