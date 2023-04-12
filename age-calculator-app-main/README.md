@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-Live Site URL: [Go live](https://yup03.github.io/Front-End-mentor/tip-calculator-app-main/)
+Live Site URL: [Go live](https://yup03.github.io/Front-End-mentor/age-calculator-app-main/)
 
 ## My process
 
