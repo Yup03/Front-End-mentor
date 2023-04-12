@@ -17,27 +17,23 @@ monthIn.value = "";
 dayIn.value = "";
 const tl = gsap.timeline();
 
-dayIn.addEventListener("input", () => {
+function onInputReset() {
   dayOut.textContent = "--";
   monthOut.textContent = "--";
   yearOut.textContent = "--";
-});
-monthIn.addEventListener("input", () => {
-  dayOut.textContent = "--";
-  monthOut.textContent = "--";
-  yearOut.textContent = "--";
-});
+  document.querySelector(".warn.warn-day").style.opacity = "0";
+  document.querySelector(".warn.warn-year").style.opacity = "0";
+}
+
+dayIn.addEventListener("input", onInputReset);
+monthIn.addEventListener("input", onInputReset);
 
 yearIn.addEventListener("input", () => {
-  dayOut.textContent = "--";
-  monthOut.textContent = "--";
-  yearOut.textContent = "--";
+  onInputReset();
   if (new Date().getFullYear() < +yearIn.value) {
     document.querySelector(".warn.warn-year").style.opacity = "1";
     document.querySelector(".warn.warn-year").textContent =
       "Must be in the past";
-  } else {
-    document.querySelector(".warn.warn-year").style.opacity = "0";
   }
 });
 
@@ -62,15 +58,13 @@ form.addEventListener("submit", (e) => {
 
   if (
     (+monthIn.value % 2 === 0 && +monthIn.value <= 6) ||
-    (+monthIn.value % 2 !== 0 && +monthIn.value > 6)
+    (+monthIn.value % 2 !== 0 && +monthIn.value > 8)
   ) {
     if (+dayIn.value > 30) {
       document.querySelector(".warn.warn-day").style.opacity = "1";
       document.querySelector(".warn.warn-day").textContent =
         "Must be a valid date";
 
-      dayIn.required = true;
-      console.log(dayIn.required);
       return;
     } else {
       document.querySelector(".warn.warn-day").style.opacity = "0";
