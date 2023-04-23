@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[62.5%] sm:text-[56.25%];
+  }
+  body {
+    @apply font-sans font-medium;
+    /* color:  #ff5252;  */
+  }
+}
+@layer components {
+  .input {
+    @apply border text-xl rounded-xl px-5 py-2 placeholder:text-onIn placeholder:sm:text-base w-full invalid:outline-red-500;
+  }
+  .label {
+    @apply uppercase text-xl sm:text-base text-[#21092f] block;
+  }
+  .btn {
+    @apply bg-[#21092f] text-bg text-xl rounded-2xl w-full p-4;
+  }
+  .circle {
+    @apply w-[8rem] h-[8rem] rounded-full bg-gradient-to-b from-[#6448fe] to-[#600594] flex items-center justify-center mb-16;
+  }
+  .check {
+    @apply inline-block border-[3px] border-l-0 border-t-0 w-[1.4rem] h-[2.4rem] rotate-45 -translate-y-[20%];
+  }
+  .warn {
+    @apply opacity-0 text-[#ff5252];
+  }
+}
