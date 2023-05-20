@@ -68,13 +68,6 @@ btnBox.addEventListener("click", function (e) {
     });
   }
 });
-/* 
-TODO
-
--Enable or disable the resetBtn 
-
-
-*/
 
 resetBtn.addEventListener("click", () => {
   reset();
@@ -105,6 +98,9 @@ function reset() {
   customTip.value = "";
   resetBtn.disabled = true;
   btnBox.querySelectorAll("*").forEach((el) => el.classList.remove("active"));
+  t = "";
+  b = "";
+  p = "";
 }
 
 function cssVar(varName = "") {
