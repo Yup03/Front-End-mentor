@@ -98,9 +98,9 @@ function reset() {
   customTip.value = "";
   resetBtn.disabled = true;
   btnBox.querySelectorAll("*").forEach((el) => el.classList.remove("active"));
-  t = "";
-  b = "";
-  p = "";
+  t = "0.00$";
+  b = "0.00$";
+  p = "0.00$";
 }
 
 function cssVar(varName = "") {

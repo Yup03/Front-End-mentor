@@ -1,22 +1,30 @@
 .wrapper {
-  padding-top: 15rem;
+  padding-top: 12.5rem;
 }
 h1 {
   text-transform: uppercase;
-  margin-bottom: 5.4rem;
+  margin-bottom: 8rem;
   text-align: center;
   font-size: 2.4rem;
   color: var(--dark-grayish-cyan);
   font-weight: var(--default-weight);
+  letter-spacing: 1rem;
 }
 .bill-card {
   background-color: var(--white);
   display: flex;
-  max-width: 80rem;
+  max-width: 93rem;
   margin: 0 auto;
-  gap: 3.2rem;
-  padding: 3.2rem;
+  /* gap: 1.7rem; */
+  padding: 0rem 4.8rem;
   border-radius: 2.4rem;
+}
+.input-box {
+  padding: 4.8rem 3.2rem 4.8rem 0;
+}
+.output-box {
+  margin: 3.2rem 0;
+  /* padding: 0 3.2rem; */
 }
 .input-box,
 .output-box {
@@ -39,7 +47,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 .select-tip_heading {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 #input-bill {
   background-image: url(../images/icon-dollar.svg);
@@ -74,8 +82,8 @@ h1 {
 .btn-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 1.2rem;
-  column-gap: 1.2rem;
+  row-gap: 1.6rem;
+  column-gap: 1.4rem;
 }
 .select-tip_default {
   color: var(--white);
@@ -107,11 +115,12 @@ h1 {
   display: inline-block;
   border: none;
   font-size: var(--input-font-size);
-  padding: 1rem 0.5rem;
+  padding: 0.6rem 0.5rem;
+  width: 11.7rem;
 }
 .input-box .select-tip-box,
 .input-box .input-bill_box {
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.4rem;
 }
 
 .input-people_text,
@@ -187,10 +196,19 @@ h1 {
   .bill-card {
     flex-direction: column;
   }
+
   .btn-reset {
     margin-top: 2.4rem;
   }
   .output-value {
     font-size: 2.4rem;
+  }
+  h1 {
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 474px) {
+  .btn-box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
