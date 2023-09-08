@@ -7,8 +7,8 @@ const Thanks = ({ setCurStep, email, curStep }) => {
     <div
       className={`px-7 flex flex-col items-start justify-center h-screen md:h-fit md:w-96 transition duration-700 ${
         curStep === 2
-          ? "opacity-100 visible pointer-events-auto"
-          : "opacity-0 invisible pointer-events-none"
+          ? "opacity-100 visible pointer-events-auto relative"
+          : "opacity-0 invisible pointer-events-none absolute"
       }`}
     >
       <img src="icon-success.svg" alt="icon-success" className="mb-7" />
