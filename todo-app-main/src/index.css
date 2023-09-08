@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  @apply bg-no-repeat bg-[length:100%_200px] md:bg-[length:100%_300px] dark:text-light-grayish-blue-dark text-very-dark-grayish-blue-light dark:bg-very-dark-blue bg-very-light-grayish-blue;
+}
+:root.dark body {
+  background-image: url("./src/assets/images/bg-mobile-dark.jpg");
+}
+:root.light body {
+  background-image: url("./src/assets/images/bg-mobile-light.jpg");
+}
+
+@media (min-width: 768px) {
+  :root.dark body {
+    background-image: url("./src/assets/images/bg-desktop-dark.jpg");
+  }
+  :root.light body {
+    background-image: url("./src/assets/images/bg-desktop-light.jpg");
+  }
+}
+
+.box {
+  @apply flex items-center gap-3 py-4 px-5 bg-very-light-gray dark:bg-very-dark-desaturated-blue;
+}
+
+.filter-btn {
+  @apply hover:text-very-dark-grayish-blue-light transition duration-300;
+}
+
+/* ******************************************************* */
+/* Customize the label (the container) */
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 40%;
+  left: 1px;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+
+  border-radius: 9999px;
+  @apply border border-light-grayish-blue-light dark:border-very-dark-grayish-blue-dark bg-very-light-gray dark:bg-very-dark-desaturated-blue;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+  /* background-color: #ccc; */
+  /* border-color: #2196f3; */
+}
+
+.contain div {
+  opacity: 0;
+}
+.contain:hover div {
+  opacity: 1;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+  /* background: ; */
+  @apply bg-gradient-to-br from-[#57ddff] to-[#c058f3];
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
