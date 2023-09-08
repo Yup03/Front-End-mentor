@@ -32,7 +32,7 @@ const TodoItem = ({ todo, handleToggle, handleDelete }) => {
           {todo.label}
         </p>
         <button className="ml-auto" onClick={() => handleDelete(todo.id)}>
-          <img src="./src/assets/images/icon-cross.svg" alt="icon-cross" />
+          <img src="./icon-cross.svg" alt="icon-cross" />
         </button>
       </div>
       <hr className="text-light-grayish-blue-light dark:text-very-dark-grayish-blue-dark" />

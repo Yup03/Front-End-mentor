@@ -27,9 +27,7 @@ const Header = () => {
           }}
         >
           <img
-            src={`src/assets/images/icon-${
-              currentTheme === "dark" ? "sun" : "moon"
-            }.svg`}
+            src={`/icon-${currentTheme === "dark" ? "sun" : "moon"}.svg`}
             alt="icon-sun"
           />
         </button>

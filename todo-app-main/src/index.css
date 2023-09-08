@@ -9,18 +9,18 @@ body {
   @apply bg-no-repeat bg-[length:100%_200px] md:bg-[length:100%_300px] dark:text-light-grayish-blue-dark text-very-dark-grayish-blue-light dark:bg-very-dark-blue bg-very-light-grayish-blue;
 }
 :root.dark body {
-  background-image: url("./src/assets/images/bg-mobile-dark.jpg");
+  background-image: url("bg-mobile-dark.jpg");
 }
 :root.light body {
-  background-image: url("./src/assets/images/bg-mobile-light.jpg");
+  background-image: url("bg-mobile-light.jpg");
 }
 
 @media (min-width: 768px) {
   :root.dark body {
-    background-image: url("./src/assets/images/bg-desktop-dark.jpg");
+    background-image: url("bg-desktop-dark.jpg");
   }
   :root.light body {
-    background-image: url("./src/assets/images/bg-desktop-light.jpg");
+    background-image: url("bg-desktop-light.jpg");
   }
 }
 
@@ -67,12 +67,6 @@ body {
 
   border-radius: 9999px;
   @apply border border-light-grayish-blue-light dark:border-very-dark-grayish-blue-dark bg-very-light-gray dark:bg-very-dark-desaturated-blue;
-}
-
-/* On mouse-over, add a grey background color */
-.contain:hover input ~ .checkmark {
-  /* background-color: #ccc; */
-  /* border-color: #2196f3; */
 }
 
 .contain div {
