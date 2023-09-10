@@ -1,17 +1,17 @@
-import { useState } from "react"
-import Pic from "./Pic"
-import PicThumb from "./PicThumb"
-import SwitchBtn from "./SwitchBtn"
+import { useState } from "react";
+import Pic from "./Pic";
+import PicThumb from "./PicThumb";
+import SwitchBtn from "./SwitchBtn";
 
 const PicList = ({ handleModal, styleSwitchBtns }) => {
-  const [curImg, setCurImg] = useState(1)
+  const [curImg, setCurImg] = useState(1);
 
   const handleNext = () => {
-    setCurImg(c => c + 1)
-  }
+    setCurImg((c) => c + 1);
+  };
   const handlePrevious = () => {
-    setCurImg(c => c - 1)
-  }
+    setCurImg((c) => c - 1);
+  };
 
   return (
     <div className="relative">
@@ -93,7 +93,7 @@ const PicList = ({ handleModal, styleSwitchBtns }) => {
         />
       )}
     </div>
-  )
-}
+  );
+};
 
-export default PicList
+export default PicList;

@@ -1,16 +1,16 @@
-import { useState } from "react"
-import Header from "./Header"
-import Main from "./Main"
-import Modal from "./modal"
+import { useState } from "react";
+import Header from "./Header";
+import Main from "./Main";
+import Modal from "./Modal";
 
 const App = () => {
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
 
-  const [cartArr, setCartArr] = useState([])
+  const [cartArr, setCartArr] = useState([]);
 
   const handleModal = () => {
-    if (!showModal) setShowModal(true)
-  }
+    if (!showModal) setShowModal(true);
+  };
 
   return (
     <div className="lg:px-16">
@@ -23,7 +23,7 @@ const App = () => {
         }`}
       ></div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

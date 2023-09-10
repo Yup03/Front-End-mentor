@@ -1,4 +1,4 @@
-import PicList from "./PicList"
+import PicList from "./PicList";
 
 const Modal = ({ setShowModal, showModal }) => {
   return (
@@ -15,7 +15,7 @@ const Modal = ({ setShowModal, showModal }) => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;
