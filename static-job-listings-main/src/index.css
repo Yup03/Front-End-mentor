@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "League Spartan", sans-serif;
+  @apply bg-light-grayish-cyan;
+}
+
+.back {
+  background-image: url("bg-header-mobile.svg");
+
+  @apply font-medium bg-no-repeat bg-[length:100%_156px] bg-left-top h-[156px] bg-desaturated-dark-cyan;
+}
+
+@media (min-width: 768px) {
+  .back {
+    background-image: url("bg-header-desktop.svg");
+  }
+}
+
+.dot {
+  @apply w-1 h-1 bg-very-dark-grayish-cyan opacity-30 inline-block rounded-full mx-2;
+}
+
+.filter-btn {
+  @apply text-desaturated-dark-cyan bg-light-grayish-cyan rounded-md overflow-hidden;
+}
