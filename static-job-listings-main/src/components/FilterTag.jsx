@@ -1,4 +1,4 @@
-const FilterTag = ({ children, addFilter, filtersArr }) => {
+const FilterTag = ({ children, addFilter, filtersArr, removeFilter }) => {
   return (
     <li>
       <button
@@ -7,12 +7,16 @@ const FilterTag = ({ children, addFilter, filtersArr }) => {
             ? "border border-desaturated-dark-cyan shadow-inner shadow-desaturated-dark-cyan"
             : ""
         }`}
-        onClick={() => addFilter(children)}
+        onClick={() =>
+          filtersArr.includes(children)
+            ? removeFilter(children)
+            : addFilter(children)
+        }
       >
         {children}
       </button>
     </li>
-  )
-}
+  );
+};
 
-export default FilterTag
+export default FilterTag;

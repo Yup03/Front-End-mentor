@@ -1,16 +1,14 @@
-import FilterTag from "./FilterTag"
-
 const FiltersList = ({ filtersArr, removeFilter, clearFilters }) => {
   return (
     <div
-      className={`flex items-center bg-white p-4 gap-4 rounded-md shadow-lg transition duration-500 ${
+      className={`flex items-center bg-white p-4 gap-4 rounded-md shadow-lg transition duration-500 max-w-7xl mx-auto ${
         filtersArr.length > 0
           ? "opacity-100 visible pointer-events-auto -translate-y-1/2"
           : "opacity-0 invisible pointer-events-none translate-x-0"
       }`}
     >
       <ul className="flex-1 flex flex-wrap gap-3">
-        {filtersArr.map(filter => (
+        {filtersArr.map((filter) => (
           <li key={filter} className="filter-btn ">
             <span className="px-2">{filter}</span>
             <button onClick={() => removeFilter(filter)}>
@@ -31,7 +29,7 @@ const FiltersList = ({ filtersArr, removeFilter, clearFilters }) => {
         clear
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default FiltersList
+export default FiltersList;

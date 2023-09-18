@@ -1,9 +1,8 @@
-import FilterTag from "./FilterTag"
-import Tag from "./Tag"
+import Tag from "./Tag";
 
-const JobItem = ({ job, addFilter, filtersArr }) => {
+const JobItem = ({ job, children }) => {
   return (
-    <div className="bg-white flex flex-col md:flex-row items-start md:items-center md:gap-4 px-5 pb-5 md:py-5 font-bold rounded-lg shadow-lg">
+    <div className="bg-white flex flex-col md:flex-row items-start md:items-center md:gap-4 px-5 pb-5 md:py-5 font-bold rounded-lg shadow-lg ">
       <img
         src={job.logo}
         alt={`${job.company} logo`}
@@ -30,34 +29,9 @@ const JobItem = ({ job, addFilter, filtersArr }) => {
 
       <div className="h-[2px] bg-light-grayish-cyan-alt w-full mb-4 md:hidden"></div>
 
-      <ul className="flex md:ml-auto flex-wrap gap-4">
-        <FilterTag addFilter={addFilter} filtersArr={filtersArr}>
-          {job.role}
-        </FilterTag>
-        <FilterTag addFilter={addFilter} filtersArr={filtersArr}>
-          {job.level}
-        </FilterTag>
-        {job.languages.map((lang, i) => (
-          <FilterTag
-            key={i * 100}
-            addFilter={addFilter}
-            filtersArr={filtersArr}
-          >
-            {lang}
-          </FilterTag>
-        ))}
-        {job.tools.map((tool, i) => (
-          <FilterTag
-            key={i * 100}
-            addFilter={addFilter}
-            filtersArr={filtersArr}
-          >
-            {tool}
-          </FilterTag>
-        ))}
-      </ul>
+      <ul className="flex md:ml-auto flex-wrap gap-4">{children}</ul>
     </div>
-  )
-}
+  );
+};
 
-export default JobItem
+export default JobItem;
