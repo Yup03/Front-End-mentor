@@ -1,4 +1,4 @@
-import NavItem from "./NavItem"
+import NavItem from "./NavItem";
 
 const Nav = ({ isNavOpen }) => {
   return (
@@ -15,7 +15,7 @@ const Nav = ({ isNavOpen }) => {
       <NavItem label="About" />
       <NavItem label="Contact" />
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

@@ -5,6 +5,7 @@ import SwitchBtn from "./SwitchBtn";
 
 const PicList = ({ handleModal, styleSwitchBtns }) => {
   const [curImg, setCurImg] = useState(1);
+  const numberOfImgs = Array.from({ length: 4 }, (_, idx) => idx + 1);
 
   const handleNext = () => {
     setCurImg((c) => c + 1);
@@ -24,65 +25,29 @@ const PicList = ({ handleModal, styleSwitchBtns }) => {
         />
       )}
       <div className="relative overflow-hidden">
-        <Pic
-          imgSrc="image-product-1.jpg"
-          curImg={curImg}
-          setCurImg={setCurImg}
-          handleModal={handleModal}
-          styleSwitchBtns={styleSwitchBtns}
-          num={1}
-        />
-        <Pic
-          imgSrc="image-product-2.jpg"
-          curImg={curImg}
-          setCurImg={setCurImg}
-          handleModal={handleModal}
-          styleSwitchBtns={styleSwitchBtns}
-          num={2}
-        />
-        <Pic
-          imgSrc="image-product-3.jpg"
-          curImg={curImg}
-          setCurImg={setCurImg}
-          handleModal={handleModal}
-          styleSwitchBtns={styleSwitchBtns}
-          num={3}
-        />
-        <Pic
-          imgSrc="image-product-4.jpg"
-          curImg={curImg}
-          setCurImg={setCurImg}
-          handleModal={handleModal}
-          styleSwitchBtns={styleSwitchBtns}
-          num={4}
-        />
+        {numberOfImgs.map((idx) => (
+          <Pic
+            imgSrc={`image-product-${idx}.jpg`}
+            curImg={curImg}
+            setCurImg={setCurImg}
+            handleModal={handleModal}
+            styleSwitchBtns={styleSwitchBtns}
+            num={idx}
+            key={idx}
+          />
+        ))}
       </div>
 
       <div className="hidden invisible pointer-events-none md:flex md:visible md:pointer-events-auto gap-5 mt-7">
-        <PicThumb
-          imgSrc="image-product-1-thumbnail.jpg"
-          num={1}
-          setCurImg={setCurImg}
-          curImg={curImg}
-        />
-        <PicThumb
-          imgSrc="image-product-2-thumbnail.jpg"
-          num={2}
-          setCurImg={setCurImg}
-          curImg={curImg}
-        />
-        <PicThumb
-          imgSrc="image-product-3-thumbnail.jpg"
-          num={3}
-          setCurImg={setCurImg}
-          curImg={curImg}
-        />
-        <PicThumb
-          imgSrc="image-product-4-thumbnail.jpg"
-          num={4}
-          setCurImg={setCurImg}
-          curImg={curImg}
-        />
+        {numberOfImgs.map((idx) => (
+          <PicThumb
+            imgSrc={`image-product-${idx}-thumbnail.jpg`}
+            num={idx}
+            setCurImg={setCurImg}
+            curImg={curImg}
+            key={idx * 100}
+          />
+        ))}
       </div>
       {curImg < 4 && (
         <SwitchBtn

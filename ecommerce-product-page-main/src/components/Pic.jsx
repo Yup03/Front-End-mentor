@@ -13,7 +13,7 @@ const Pic = ({ imgSrc, curImg, handleModal, num }) => {
         }`}
       />
     </button>
-  )
-}
+  );
+};
 
-export default Pic
+export default Pic;

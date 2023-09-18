@@ -1,21 +1,15 @@
-import Content from "./Content"
-import PicList from "./PicList"
-import Order from "./Order"
+import Content from "./Content";
 
-const Main = ({ handleModal, setCartArr }) => {
+const Main = ({ picListEl, orderEl }) => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center md:px-16 lg:gap-10">
-      <PicList
-        handleModal={handleModal}
-        styleSwitchBtns="md:hidden md:invisible md:pointer-events-none"
-      />
+    <div className="flex flex-col md:flex-row md:items-center lg:gap-10 max-w-7xl mx-auto">
+      {picListEl}
       <div className="px-5 py-7">
         <Content />
-
-        <Order setCartArr={setCartArr} />
+        {orderEl}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

@@ -2,10 +2,13 @@ import { useState } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Modal from "./Modal";
+import Shopping from "./Shopping";
+import PicList from "./PicList";
+import Order from "./Order";
+import Overlay from "./Overlay";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
-
   const [cartArr, setCartArr] = useState([]);
 
   const handleModal = () => {
@@ -14,14 +17,20 @@ const App = () => {
 
   return (
     <div className="lg:px-16">
-      <Header cartArr={cartArr} setCartArr={setCartArr} />
-      <Main handleModal={handleModal} setCartArr={setCartArr} />
+      <Header>
+        <Shopping cartArr={cartArr} setCartArr={setCartArr} />
+      </Header>
+      <Main
+        picListEl={
+          <PicList
+            handleModal={handleModal}
+            styleSwitchBtns="md:hidden md:invisible md:pointer-events-none"
+          />
+        }
+        orderEl={<Order setCartArr={setCartArr} />}
+      />
       <Modal setShowModal={setShowModal} showModal={showModal} />
-      <div
-        className={`fixed top-0 left-0 w-screen h-screen bg-black opacity-70 hidden invisible pointer-events-none md:z-40 ${
-          showModal ? "md:block md:visible md:pointer-events-auto" : ""
-        }`}
-      ></div>
+      <Overlay showModal={showModal} />
     </div>
   );
 };
