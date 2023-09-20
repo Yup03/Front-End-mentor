@@ -32,4 +32,6 @@ This is a collection of challenges from [Frontend Mentor](https://yup03.github.i
 
 ### Intermediate
 
+| Challenges                                                               |
+| ------------------------------------------------------------------------ |
 | [room-homepage](https://yup03.github.io/Front-End-mentor/room-homepage/) |
