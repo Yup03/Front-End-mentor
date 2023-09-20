@@ -38,3 +38,4 @@ This is a collection of challenges from [Frontend Mentor](https://yup03.github.i
 | [room-homepage](https://yup03.github.io/Front-End-mentor/room-homepage/)         |
 | [ecommerce-product-page](https://ecommerce-product-page-main-5r4q.onrender.com/) |
 | [todo-app](https://todo-app-main-re.netlify.app/)                                |
+| [static-job-listings](https://static-job-listings.onrender.com/)                 |

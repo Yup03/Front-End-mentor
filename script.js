@@ -107,7 +107,7 @@ const challenges = [
   {
     name: "static-job-listings-main",
     level: "Intermediate",
-    link: "#",
+    link: "https://static-job-listings.onrender.com/",
     id: 19,
   },
   {
@@ -156,7 +156,7 @@ const challenges = [
     name: "room-homepage",
     level: "Intermediate",
     link: "https://yup03.github.io/Front-End-mentor/room-homepage/",
-    id: 26,
+    id: 27,
   },
 ];
 
