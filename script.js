@@ -65,7 +65,7 @@ const challenges = [
   {
     name: "loopstudios--landing-page",
     level: "Junior",
-    link: "https://yup03.github.io/loopstudios--landing-page/",
+    link: "https://yup03.github.io/Front-End-mentor/loopstudios--landing-page/",
     id: 11,
   },
   {
@@ -113,13 +113,13 @@ const challenges = [
   {
     name: "sunnyside-agency-landing-page",
     level: "Junior",
-    link: "https://yup03.github.io/sunnyside-agency-landing-page/",
+    link: "https://yup03.github.io/Front-End-mentor/sunnyside-agency-landing-page/",
     id: 20,
   },
   {
     name: "testimonials-grid-section-main",
     level: "Junior",
-    link: "https://yup03.github.io/testimonials-grid-section-main/",
+    link: "https://yup03.github.io/Front-End-mentor/testimonials-grid-section-main/",
     id: 21,
   },
   {
