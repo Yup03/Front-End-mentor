@@ -29,9 +29,12 @@ This is a collection of challenges from [Frontend Mentor](https://yup03.github.i
 | [pricing-component](https://yup03.github.io/Front-End-mentor/pricing-component-with-toggle-master)                    |
 | [fylo-landing-page](https://yup03.github.io/Front-End-mentor/fylo-landing-page-with-two-columns)                      |
 | [huddle-landing-page](https://yup03.github.io/Front-End-mentor/huddle-landing-page-with-curved-sections)              |
+| [newsletter-sign-up-with-success-message](https://newsletter-sign-up-re.netlify.app/)                                 |
 
 ### Intermediate
 
-| Challenges                                                               |
-| ------------------------------------------------------------------------ |
-| [room-homepage](https://yup03.github.io/Front-End-mentor/room-homepage/) |
+| Challenges                                                                       |
+| -------------------------------------------------------------------------------- |
+| [room-homepage](https://yup03.github.io/Front-End-mentor/room-homepage/)         |
+| [ecommerce-product-page](https://ecommerce-product-page-main-5r4q.onrender.com/) |
+| [todo-app](https://todo-app-main-re.netlify.app/)                                |

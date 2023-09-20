@@ -28,7 +28,7 @@ const challenges = [
   },
   {
     name: "ecommerce-product-page-main",
-    level: "Junior",
+    level: "Intermediate",
     link: "https://ecommerce-product-page-main-5r4q.onrender.com/",
     id: 5,
   },
@@ -136,7 +136,7 @@ const challenges = [
   },
   {
     name: "todo-app-main",
-    level: "Junior",
+    level: "Intermediate",
     link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app-main",
     id: 24,
   },
@@ -145,6 +145,12 @@ const challenges = [
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/news-homepage-main",
     id: 25,
+  },
+  {
+    name: "newsletter-sign-up",
+    level: "Intermediate",
+    link: "https://newsletter-sign-up-re.netlify.app/",
+    id: 26,
   },
   {
     name: "room-homepage",
