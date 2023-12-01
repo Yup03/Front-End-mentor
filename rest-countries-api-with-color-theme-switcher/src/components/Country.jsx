@@ -6,7 +6,7 @@ const Country = ({ countryObj }) => {
   return (
     <li className="group">
       <Link href={`/${countryObj.name.common}`}>
-        <div className="card bg-neutral shadow-xl group-hover:-translate-y-[10px] max-w-[400px] duration-500 transition-transform">
+        <div className="card bg-neutral shadow-xl group-hover:-translate-y-[10px] max-w-[400px] duration-500 transition-transform h-full">
           <figure className="w-full basis-[210px] overflow-hidden relative">
             <Image
               src={countryObj.flags.svg}
