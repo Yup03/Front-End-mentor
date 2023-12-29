@@ -1,39 +1,39 @@
-"use strict";
-const cardBox = document.querySelector(".card-box");
+"use strict"
+const cardBox = document.querySelector(".card-box")
 
 const challenges = [
   {
-    name: "3-column-preview-card-component-main",
+    name: "3-column-preview-card-component",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/3-column-preview-card-component-main/",
     id: 1,
   },
   {
-    name: "advice-generator-app-main",
+    name: "advice-generator-app",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/advice-generator-app-main/",
     id: 2,
   },
   {
-    name: "age-calculator-app-main",
+    name: "age-calculator-app",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/age-calculator-app-main/",
     id: 3,
   },
   {
-    name: "article-preview-component-master",
+    name: "article-preview-component",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/article-preview-component-master",
     id: 4,
   },
   {
-    name: "ecommerce-product-page-main",
+    name: "ecommerce-product-page",
     level: "Intermediate",
     link: "https://ecommerce-product-page-main-5r4q.onrender.com/",
     id: 5,
   },
   {
-    name: "four-card-feature-section-master",
+    name: "four-card-feature-section",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/four-card-feature-section-master",
     id: 6,
@@ -57,7 +57,7 @@ const challenges = [
     id: 9,
   },
   {
-    name: "interactive-card-details-form-main_react",
+    name: "interactive-card-details-form",
     level: "Junior",
     link: "https://interactive-card-details-form-main-re.netlify.app/",
     id: 10,
@@ -69,43 +69,43 @@ const challenges = [
     id: 11,
   },
   {
-    name: "nft-preview-card-component-main",
+    name: "nft-preview-card-component",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/nft-preview-card-component-main",
     id: 12,
   },
   {
-    name: "pricing-component-with-toggle-master",
+    name: "pricing-component-with-toggle",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/pricing-component-with-toggle-master",
     id: 14,
   },
   {
-    name: "profile-card-component-main",
+    name: "profile-card-component",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/profile-card-component-main",
     id: 15,
   },
   {
-    name: "results-summary-component-main",
+    name: "results-summary-component",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/results-summary-component-main/",
     id: 16,
   },
   {
-    name: "single-price-grid-component-master",
+    name: "single-price-grid-component",
     level: "Newbie",
     link: "https://yup03.github.io/Front-End-mentor/single-price-grid-component-master/",
     id: 17,
   },
   {
-    name: "social-media-dashboard-with-theme-switcher-master",
+    name: "social-media-dashboard-with-theme-switcher",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/social-media-dashboard-with-theme-switcher-master/",
     id: 18,
   },
   {
-    name: "static-job-listings-main",
+    name: "static-job-listings",
     level: "Intermediate",
     link: "https://static-job-listings.onrender.com/",
     id: 19,
@@ -117,37 +117,37 @@ const challenges = [
     id: 20,
   },
   {
-    name: "testimonials-grid-section-main",
+    name: "testimonials-grid-section",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/testimonials-grid-section-main/",
     id: 21,
   },
   {
-    name: "time-tracking-dashboard-main",
+    name: "time-tracking-dashboard",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/time-tracking-dashboard-main/",
     id: 22,
   },
   {
-    name: "tip-calculator-app-main",
+    name: "tip-calculator-app",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app-main",
     id: 23,
   },
   {
-    name: "todo-app-main",
+    name: "todo-app",
     level: "Intermediate",
     link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app-main",
     id: 24,
   },
   {
-    name: "news-homepage-main",
+    name: "news-homepage",
     level: "Junior",
     link: "https://yup03.github.io/Front-End-mentor/news-homepage-main",
     id: 25,
   },
   {
-    name: "newsletter-sign-up",
+    name: "newsletter-sign-up-with-success-message",
     level: "Intermediate",
     link: "https://newsletter-sign-up-re.netlify.app/",
     id: 26,
@@ -158,11 +158,17 @@ const challenges = [
     link: "https://yup03.github.io/Front-End-mentor/room-homepage/",
     id: 27,
   },
-];
+  {
+    name: "rest-countries-api-with-color-theme-switcher",
+    level: "Intermediate",
+    link: "https://countries-with-color-theme-switcher-next.vercel.app/",
+    id: 28,
+  },
+]
 
 const cardBoxContent = challenges
   .map(
-    (chal) =>
+    chal =>
       `<a href=${chal.link} class="card" target="_blank">
       <div class="card-img">
         <img
@@ -179,6 +185,6 @@ const cardBoxContent = challenges
       </div>
     </a>`
   )
-  .join("");
+  .join("")
 
-cardBox.innerHTML = cardBoxContent;
+cardBox.innerHTML = cardBoxContent
