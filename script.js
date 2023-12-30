@@ -5,25 +5,25 @@ const challenges = [
   {
     name: "3-column-preview-card-component",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/3-column-preview-card-component-main/",
+    link: "https://yup03.github.io/Front-End-mentor/3-column-preview-card-component/",
     id: 1,
   },
   {
     name: "advice-generator-app",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/advice-generator-app-main/",
+    link: "https://yup03.github.io/Front-End-mentor/advice-generator-app",
     id: 2,
   },
   {
     name: "age-calculator-app",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/age-calculator-app-main/",
+    link: "https://yup03.github.io/Front-End-mentor/age-calculator-app",
     id: 3,
   },
   {
     name: "article-preview-component",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/article-preview-component-master",
+    link: "https://yup03.github.io/Front-End-mentor/article-preview-component",
     id: 4,
   },
   {
@@ -35,7 +35,7 @@ const challenges = [
   {
     name: "four-card-feature-section",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/four-card-feature-section-master",
+    link: "https://yup03.github.io/Front-End-mentor/four-card-feature-section",
     id: 6,
   },
   {
@@ -53,7 +53,7 @@ const challenges = [
   {
     name: "huddle-landing-page-with-curved-sections",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/huddle-landing-page-with-curved-sections/",
+    link: "https://yup03.github.io/Front-End-mentor/huddle-landing-page-with-curved-sections",
     id: 9,
   },
   {
@@ -71,37 +71,37 @@ const challenges = [
   {
     name: "nft-preview-card-component",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/nft-preview-card-component-main",
+    link: "https://yup03.github.io/Front-End-mentor/nft-preview-card-component",
     id: 12,
   },
   {
     name: "pricing-component-with-toggle",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/pricing-component-with-toggle-master",
+    link: "https://yup03.github.io/Front-End-mentor/pricing-component-with-toggle",
     id: 14,
   },
   {
     name: "profile-card-component",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/profile-card-component-main",
+    link: "https://yup03.github.io/Front-End-mentor/profile-card-component",
     id: 15,
   },
   {
     name: "results-summary-component",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/results-summary-component-main/",
+    link: "https://yup03.github.io/Front-End-mentor/results-summary-component/",
     id: 16,
   },
   {
     name: "single-price-grid-component",
     level: "Newbie",
-    link: "https://yup03.github.io/Front-End-mentor/single-price-grid-component-master/",
+    link: "https://yup03.github.io/Front-End-mentor/single-price-grid-component/",
     id: 17,
   },
   {
     name: "social-media-dashboard-with-theme-switcher",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/social-media-dashboard-with-theme-switcher-master/",
+    link: "https://yup03.github.io/Front-End-mentor/social-media-dashboard-with-theme-switcher/",
     id: 18,
   },
   {
@@ -119,36 +119,36 @@ const challenges = [
   {
     name: "testimonials-grid-section",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/testimonials-grid-section-main/",
+    link: "https://yup03.github.io/Front-End-mentor/testimonials-grid-section/",
     id: 21,
   },
   {
     name: "time-tracking-dashboard",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/time-tracking-dashboard-main/",
+    link: "https://yup03.github.io/Front-End-mentor/time-tracking-dashboard",
     id: 22,
   },
   {
     name: "tip-calculator-app",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app-main",
+    link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app",
     id: 23,
   },
   {
     name: "todo-app",
     level: "Intermediate",
-    link: "https://yup03.github.io/Front-End-mentor/tip-calculator-app-main",
+    link: "https://todo-app-main-re.netlify.app/",
     id: 24,
   },
   {
     name: "news-homepage",
     level: "Junior",
-    link: "https://yup03.github.io/Front-End-mentor/news-homepage-main",
+    link: "https://yup03.github.io/Front-End-mentor/news-homepage",
     id: 25,
   },
   {
     name: "newsletter-sign-up-with-success-message",
-    level: "Intermediate",
+    level: "Junior",
     link: "https://newsletter-sign-up-re.netlify.app/",
     id: 26,
   },
@@ -160,7 +160,7 @@ const challenges = [
   },
   {
     name: "rest-countries-api-with-color-theme-switcher",
-    level: "Intermediate",
+    level: "Advanced",
     link: "https://countries-with-color-theme-switcher-next.vercel.app/",
     id: 28,
   },
