@@ -1,4 +1,4 @@
-This is a collection of challenges from [Frontend Mentor](https://yup03.github.io/Front-End-mentor/) that i've completed
+This is a collection of [Challenges from Frontend Mentor](https://yup03.github.io/Front-End-mentor/) that i've completed
 
 ### Newbie
 

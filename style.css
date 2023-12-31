@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 
+:root {
+  --primary-color: hsla(209, 94%, 60%, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,25 +18,87 @@ body {
   background: #f0f0f0;
   font-size: 1.6rem;
   font-family: "Titillium Web", sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
 }
 
 h1 {
-  margin: 6.4rem 0;
+  margin: 3rem 0;
   text-align: center;
   font-size: 4.8rem;
 }
-h6 {
-  font-weight: 400;
-  line-height: 1.3;
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
 }
+
+/************************************/
+.sentinal {
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #f10c49; */
+  opacity: 50%;
+  z-index: -1;
+}
+.header {
+  position: relative;
+}
+.tag-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  opacity: 0;
+  min-height: 8rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  transition: 0.5s ease;
+  will-change: background-color;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: 999;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.btn-del {
+  background-color: var(--primary-color);
+  padding: 0 0.8rem;
+  height: 100%;
+  border: 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+/************************************/
+
 .card-box {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  max-width: 144rem;
-  margin: 0 auto;
   column-gap: 2.4rem;
   row-gap: 5.4rem;
-  padding: 0 6.4rem;
   transition: 0.3s ease;
 }
 @media (max-width: 430px) {
@@ -42,28 +108,30 @@ h6 {
   .card-box {
     padding: 1.2rem;
   }
+  .tag-box.sticky,
+  .container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
 }
-.card:link,
-.card:visited {
+.card {
   box-shadow: 0 0 30px rgb(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   overflow: hidden;
   color: #222;
   text-decoration: none;
 }
-.card:hover,
-.card:active {
-  box-shadow: 0 0 0 5px rgb(0, 0, 0, 0.8);
-}
+
 .card-img {
   overflow: hidden;
-  /* height: 30rem; */
+
+  & img {
+    display: block;
+    width: 100%;
+    transition: 0.3s ease;
+  }
 }
-.card-img img {
-  display: block;
-  width: 100%;
-  transition: 0.3s ease;
-}
+
 .card:hover .card-img img {
   scale: 1.05;
   transition: 0.5s ease;
@@ -71,7 +139,51 @@ h6 {
 }
 .card-content {
   padding: 2.4rem;
+  /* display: flex;
+  flex-direction: column; */
 }
-.card-content h6 {
-  font-size: 1.8rem;
+.challenge-name {
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s ease;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  &:hover,
+  &:active {
+    color: hsl(209, 72%, 50%);
+  }
+}
+
+.btn-box {
+  margin-top: 2.4rem;
+  /* margin-top: auto; */
+  display: flex;
+  gap: 0.5rem;
+}
+.btn-tag {
+  &.highlight {
+    color: red;
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.btn-tag,
+.tag span {
+  padding: 0.5rem 0.8rem;
+}
+.btn-tag,
+.tag {
+  border-radius: 0.5rem;
+  /* background-color: hsl(209, 72%, 50%, 0.3); */
+  font-family: inherit;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.5s ease;
 }
