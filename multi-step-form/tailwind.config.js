@@ -15,7 +15,12 @@ export default {
       white: "#ffffff",
       transparent: "transparent",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        desktop: "url('./bg-sidebar-desktop.svg')",
+        mobile: "url('./bg-sidebar-mobile.svg')",
+      },
+    },
   },
   plugins: [],
 }
