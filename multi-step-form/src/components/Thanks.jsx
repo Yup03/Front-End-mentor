@@ -3,7 +3,7 @@ const Thanks = () => {
     <div className="wr">
       <div className="box text-center">
         <img
-          src="./src/assets/images/icon-thank-you.svg"
+          src="./icon-thank-you.svg"
           alt="icon"
           className="inline-block mb-8"
         />

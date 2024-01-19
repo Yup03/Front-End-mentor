@@ -25,7 +25,7 @@ const PlanCard = ({
       onClick={handleSelection}
     >
       <img
-        src={`./src/assets/images/icon-${label.toLowerCase()}.svg`}
+        src={`./icon-${label.toLowerCase()}.svg`}
         alt={`icon ${label.toLowerCase()}`}
       />
       <div className="inline-flex flex-col">
