@@ -305,7 +305,7 @@ const obsOptions = {
 }
 function obsCallback(entries) {
   const [entry] = entries
-  console.log(entry)
+  // console.log(entry)
 
   if (!entry.isIntersecting) tagBox.classList.add("sticky")
   else tagBox.classList.remove("sticky")
@@ -314,3 +314,5 @@ function obsCallback(entries) {
 const headerObserver = new IntersectionObserver(obsCallback, obsOptions)
 
 headerObserver.observe(sentinal)
+
+console.log(Object.groupBy(challenges, ({ level }) => level))

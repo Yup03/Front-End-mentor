@@ -29,10 +29,26 @@ button {
 }
 
 h1 {
-  margin: 3rem 0;
+  margin: 3rem 3rem 1rem 3rem;
   text-align: center;
   font-size: 4.8rem;
 }
+h1 + p {
+  font-size: 2rem;
+  text-align: center;
+}
+.link-repo {
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+  &:hover,
+  &:active {
+    color: hsl(209, 72%, 50%);
+    /* text-decoration: underline; */
+  }
+}
+
 .container {
   max-width: 144rem;
   margin: 0 auto;
