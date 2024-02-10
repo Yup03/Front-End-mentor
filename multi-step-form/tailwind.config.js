@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        desktop: "url('./bg-sidebar-desktop.svg')",
-        mobile: "url('./bg-sidebar-mobile.svg')",
+        desktop: "url('/bg-sidebar-desktop.svg')",
+        mobile: "url('/bg-sidebar-mobile.svg')",
       },
     },
   },
