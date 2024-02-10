@@ -2,17 +2,10 @@ import { useState } from "react"
 import PlanCard from "./PlanCard"
 import ToggleSwitch from "./ToggleSwitch"
 
-const Plan = ({
-  curStep,
-  checked,
-  setChecked,
-  plans,
-  setChosenPlan,
-  chosenPlan,
-}) => {
+const Plan = ({ checked, setChecked, plans, setChosenPlan, chosenPlan }) => {
   const [selected, setSelected] = useState(null)
   return (
-    <div className={`wr ${curStep === 2 ? "" : "hidden"}`}>
+    <div className="wr">
       <div className="box">
         <h4>Select your plan</h4>
         <p>You have the option of monthly or yearly billing.</p>

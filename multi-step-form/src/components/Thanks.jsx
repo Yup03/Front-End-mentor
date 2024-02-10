@@ -1,6 +1,18 @@
+import { motion } from "framer-motion"
+
 const Thanks = () => {
+  const boxVar = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
+
   return (
-    <div className="wr">
+    <motion.div
+      className="wr"
+      initial="hidden"
+      animate="visible"
+      variants={boxVar}
+    >
       <div className="box text-center">
         <img
           src="./icon-thank-you.svg"
@@ -14,7 +26,7 @@ const Thanks = () => {
           at support@loremgaming.com.
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

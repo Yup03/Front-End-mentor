@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react"
+import { motion } from "framer-motion"
 
 const PlanCard = ({
   plan,
@@ -17,12 +17,15 @@ const PlanCard = ({
   }
 
   return (
-    <div
+    <motion.div
       className={`card items-start md:flex-col md:basis-[30%] md:gap-7 ${
         isSelected ? "border-purplish-blue" : "border-light-gray"
       }`}
       tabIndex={1}
       onClick={handleSelection}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1 }}
     >
       <img
         src={`./icon-${label.toLowerCase()}.svg`}
@@ -37,7 +40,7 @@ const PlanCard = ({
           <span className="text-marine-blue md:text-xs">2 months free</span>
         )}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

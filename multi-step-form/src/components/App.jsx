@@ -82,14 +82,16 @@ const App = () => {
           />
         )}
 
-        <Plan
-          curStep={curStep}
-          checked={checked}
-          setChecked={setChecked}
-          plans={plans}
-          setChosenPlan={setChosenPlan}
-          chosenPlan={chosenPlan}
-        />
+        {curStep === 2 && (
+          <Plan
+            curStep={curStep}
+            checked={checked}
+            setChecked={setChecked}
+            plans={plans}
+            setChosenPlan={setChosenPlan}
+            chosenPlan={chosenPlan}
+          />
+        )}
 
         {curStep === 3 && (
           <AddOns
