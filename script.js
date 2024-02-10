@@ -196,6 +196,13 @@ const challenges = [
     id: 28,
     tags: ["nextjs", "reactjs", "daisyui"],
   },
+  {
+    name: "multi-step-form",
+    level: "Advanced",
+    link: "https://multi-step-form-h4ro.onrender.com/",
+    id: 29,
+    tags: ["reactjs", "tailwindcss", "framer-motion"],
+  },
 ]
 
 //Initial
