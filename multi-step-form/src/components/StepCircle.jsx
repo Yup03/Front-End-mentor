@@ -1,6 +1,6 @@
 const StepCircle = ({ num, curStep }) => {
   return (
-    <div className="md:flex md:items-center md:space-x-3">
+    <li className="md:flex md:items-center md:space-x-3">
       <span
         className={`border-2 inline-flex items-center justify-center w-9 h-9 rounded-full border-magnolia text-magnolia font-medium ${
           curStep === num ? "bg-light-blue" : ""
@@ -18,7 +18,7 @@ const StepCircle = ({ num, curStep }) => {
           {num === 4 && "SUMMARY"}
         </span>
       </div>
-    </div>
+    </li>
   )
 }
 
