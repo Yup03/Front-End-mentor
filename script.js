@@ -203,6 +203,13 @@ const challenges = [
     id: 29,
     tags: ["reactjs", "tailwindcss", "framer-motion"],
   },
+  {
+    name: "product-list-with-cart",
+    level: "Junior",
+    link: "https://product-list-with-cart-3oti.onrender.com/",
+    id: 30,
+    tags: ["reactjs", "tailwindcss"],
+  },
 ]
 
 //Initial
@@ -281,10 +288,10 @@ function addTag(target) {
 
   btnElsWithTheSameTag.forEach(btn => {
     btn.classList.add("highlight")
-    console.log(btn)
+    // console.log(btn)
   })
 
-  console.log(btnElsWithTheSameTag)
+  // console.log(btnElsWithTheSameTag)
 
   displayFilteredChallenges()
 }
@@ -315,4 +322,4 @@ const headerObserver = new IntersectionObserver(obsCallback, obsOptions)
 
 headerObserver.observe(sentinal)
 
-console.log(Object.groupBy(challenges, ({ level }) => level))
+// console.log(Object.groupBy(challenges, ({ level }) => level))
